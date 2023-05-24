@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+
 *{
 
     margin: 0;
@@ -83,12 +85,7 @@ body{
     margin-right: 5px;
     margin-left: 5px;
 }
-/*
-.button{
 
-    a
-}
-*/
 .button button{
 
     border-radius: 15px;
