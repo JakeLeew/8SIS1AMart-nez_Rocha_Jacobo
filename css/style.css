@@ -1,7 +1,11 @@
 *{
 
-    background
-    color:
-    font
+    background-color: rgb(rgb(80, 104, 138), green, blue);
+    color: rgb(rgb(77, 100, 100), green, blue);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     
 }
+
