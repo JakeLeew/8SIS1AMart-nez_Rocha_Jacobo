@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;600&display=swap');
+
+/*usos en estilo
+ Colores que podemos usar como paleta de colores 
+color: rgb(138, 178, 110);
+
+*/
+
+/* Variables en css: */
+
+:root{
+
+    --color_text-primary: rgb(138, 178, 110); 
+    --color_text-secundary: #000000;
+    --color_text-tertiary: #69B00B;
+    --main_color-primary: #55b0ce;
+    --main_color-secundary: rgb(182, 195, 166);
+    --background_color: #e1d2be;
+    --lowtext_font_size: 16px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
+    --tpxt_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+/* Estilo del header/inicio */
+
+header{
+
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+
+}
+
+body{
+
+    cursor: url(./img/Rainbow_Cursor.webp), auto;
+
+}
+
+.container--header{
+
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+
+}
+
+.logo{
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.logo img{
+
+    width: 50px;
+
+}
+
+.menu{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.menu nav{
+
+    margin: 0px 20px;
+
+}
+
+.menu nav ul{
+
+    display: flex;
+
+}
+
+.menu nav ul li{
+
+    list-style: none;
+    margin: 20px 16px;
+}
+
+.menu nav ul li a{
+
+    color: var(--color_text-secundary); /*Variable*/
+    font-size: var(--lowtext_font_size); /*Variable*/
+    position: relative;
+
+}
+
+/* La etiqueta :hover indica que cuando el cursor este por ensima del objeto realizará una animación y cambiara el color */
+.menu nav ul li a:hover{
+
+    color: var(--color_text-primary);
+
+}
+
+/* Fin estilo header/inicio */
+/* ====================================================== */
+/* ~~~~~ Inicio del main ~~~~~*/
+/* estilo inicio */
+
+.container--cover{
+
+    padding: 100px;
+    padding-bottom: 100px; 
+    background: var(--main_color-secundary);
+
+}
+
+.cover{
+
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+
+}
+
+.text--cover{
+
+    width: 100%;
+    padding-right: 150px;
+
+}
+
+.text--cover h1{
+
+    font-size: 40px;
+    color: var(--color_text-tertiary);
+
+}
+
+.text--cover h1 p{
+
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--color_text-primary);
+
+}
+
+.btn__text{
+
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background: #69B00B;
+
+}
+
+.btn__text:hover{
+
+    background: transparent;
+    border: 2px solid var(--main_color-primary);
+    color: rgb(34, 78, 135);
+
+}
+
+.image--cover{
+
+    width: 100%;
+
+}
+
+.image--cover img{
+    /*   top der botton izq  */
+    margin: 115px 35px 0px 0px;
+    width: 550px;
+    align-self: flex-start;
+
+}
+
+/* fin estilo header/inicio */
+/* ====================================================== */
+/* Parte de prueba*/
+
+.image--marco {
+    background-image: url(../landingPage/img/separacion.1.jpeg);
+    background-repeat: no-repeat;
+    /*Esta propiedad nos ayuda a central la imagen pero además hace que ocupe todo su lugar sin necesidad de repetirse*/
+    background-attachment: fixed;
+    /*Hace que la imagen la "ate" y se mantenga fija y se quedara estatica*/
+    background-size: cover;
+    /*El cover le indica a la imagen que debe de tomar todo el tamaño de la pagina web de fondo*/
+    /*text-align: center;*/
+    height: 20em;
+
+}
+
+/* ====================================================== */
+/* inicio estilo wiki */
+
+.container--wiki{
+
+    padding: 100px 0px;
+    background-image: linear-gradient(60deg, rgb(182, 195, 166) 0%, #e1d2be 100%);
+
+}
+
+.wiki{
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+
+}
+
+.text--intro-wiki{
+
+    width: 100%;
+    padding-right: 40px;
+
+}
+
+.text--intro-wiki h1{
+
+    color: var(--color_text-tertiary);
+    font-weight: 600;
+
+}
+
+.text--intro-wiki p{
+
+    font-size: var(--text_paragraph);
+    color: var(--color_text-secundary);
+    margin-top: 40px;
+
+}
+
+.image--about{
+
+    width: 100%;
+    display: flex;
+
+}
+
+.image--about img{
+
+    width: 300px;
+    border-radius: 20px;
+    display: inline-block;
+    background: black;
+
+}
+
+/* ~~~~~Fin de estilos del main~~~~~ */
+/* ====================================================== */
+

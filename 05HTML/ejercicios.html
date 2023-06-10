@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ================= Ejercicio #1 ================= -->
+    <div class="container">
+        <h3>Ejercicio 1</h3>
+        <form action="" name="formulario" action="">
+            <label>formulario para la obtencion de inversión del capital del 2% mensual</label>
+            <div class="table-content">
+                <table>
+                    <tr>
+                        <td>
+                            introduce la cantidad a invertir: 
+                            <!-- onkeypress es un evento que sucede cuando presionamos una tecla en el teclado esta será numerica, letra o de simbolo -->
+                        </td>
+                        <td>
+                            <input id="validarEntrada" type="text" name="cantidad" onkeypress="return validarn (event)">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>su saldo total con el interes a 2% es de:</td>
+                        <td>
+                            <input type="text" name="sueldoid" id="cantidadid" readonly="readonly" class="input_text" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td><input type="button" value="borrar datos" name="borrar" onclick="borrar()"></td>
+                        <!-- si la funcion esta escrita CORRECTAMENTE no la va a llamar por ende se busca otra alternativa -->
+                       <td>
+                            <input type="button" value="calcular interes" name="enviar"
+                            onclick="interes()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+    <br><!-- ================= Ejercicio #2 ================= -->
+    <p>-----------------------------------------------------------------------------------------------------------------</p>
+    <div>
+        <h3>Ejercicio 2</h3>
+        <form action="" name="Comisiones" action="">
+          <label for="">Obtención del sueldo base más el 10% extra por comisión de sus ventas</label>
+          <div class="table-content">
+            <table class="table-content1">
+              <br>
+              <tr>Ingrese las ventas generadas en el mes y el sueldo base:</tr>
+              <tr>
+                <td>¿Cuál es el sueldo base?</td>
+                <td>
+                  <input type="text" name="sueldo" id="sueldoBase">
+                </td>
+              </tr>
+              <tr>
+                <td>Venta 1:</td>
+                <td>
+                  <input type="text" name="venta1" id="venta1">
+                </td>
+              </tr>
+              <tr>
+                <td>Venta 2:</td>
+                <td>
+                  <input type="text" name="venta2" id="venta2">
+                </td>
+              </tr>
+              <tr>
+                <td>Venta 3:</td>
+                <td>
+                  <input type="text" name="venta3" id="venta3">
+                </td>
+              </tr>
+              <tr>
+                <td><!-- espacio xd --></td>
+                <td><br>
+                  <input type="button" value="Calcular sueldo final" onclick="calcularSueldoFinal()">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <br>Total de ventas del mes en curso:
+                </td>
+                <td><br>
+                  <input type="text" name="sueldoid" id="sueldoFinal" readonly="readonly" class="input_text">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+
+    <br><!-- ================= Ejercicio #3 ================= -->
+    <p>-----------------------------------------------------------------------------------------------------------------</p>
+    <div>
+        <h3>Ejercicio 3</h3>
+        <form action="" name="descuento" action="">
+          <label for="">Calcular el precio de un articulo con un 15% descuento.</label>
+          <div class="table-content">
+            <table class="table-content1">
+              <br>
+              <tr>
+                <td>Ingrese el precio original: </td>
+                <td><input type="text" id="precioOriginal" oninput="validarNumeroEntero()"></td>
+              </tr>
+              <tr>
+                <td>
+                  <br><input type="button" value="Calcular precio final" onclick="calcularPrecioFinal()">
+                </td>
+                <td>
+                  <input type="text" name="precioFinal" id="precioFinal" readonly="readonly" class="input_text">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+
+    <br><!-- ================= Ejercicio #4 ================= -->
+    <p>-----------------------------------------------------------------------------------------------------------------</p>
+    <div>
+        <h3>Ejercicio 4</h3>
+        <form action="" name="calificaciones" action="">
+            <label for="">Calificación final en la materia de algoritmos.</label>
+            <div class="table-content">
+                <table class="table-content1"><br>
+                    <tr>
+                        <td>ingrese la calificación del primer parcial: </td>
+                        <td><input type="text" id="calificacion1" oninput="validarNumeroEntero(this)"></td>
+                    </tr>
+                    <tr>
+                        <td>ingrese la calificación del segundo parcial: </td>
+                        <td><input type="text" id="calificacion2" oninput="validarNumeroEntero(this)"></td>
+                    </tr>
+                    <tr>
+                        <td>ingrese la calificación del tercer parcial: </td>
+                        <td><input type="text" id="calificacion3" oninput="validarNumeroEntero(this)"></td>
+                    </tr>
+                    <tr>
+                        <td>ingrese la calificación del examen final: </td>
+                        <td><input type="text" id="examenFinal" oninput="validarNumeroEntero(this)"></td>
+                    </tr>
+                    <tr>
+                        <td>ingrese la calificación del trabajo final: </td>
+                        <td><input type="text" id="trabajoFinal" oninput="validarNumeroEntero(this)"></td>
+                    </tr>                    
+                    <tr>                        
+                        <td>                        
+                            <br><input type="button" value="Calcular la calificación final" onclick="calcularCalificacionFinal()">                            
+                        </td> 
+                        <td>
+                            <input type="text" name="calid" id="calificacion_final" readonly="readonly" class="input_text" >
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+    <br><!-- ================= Ejercicio #5 ================= -->
+    <p>-----------------------------------------------------------------------------------------------------------------</p>
+    <div>
+        <h3>Ejercicio 5</h3>
+        <form action="" name="hombresymujeres" action="">
+            <label for="">Calcular el porcetaje de mujeres y hombres en un grupo.</label>
+            <div class="table-content">
+                <table class="table-content5"><br>
+                    <tr>
+                        <td>ingrese cuantos alumnos hombres hay:</td>
+                        <td><input type="text" id="hombres" oninput="validarNumeroEntero(this)"></td>
+                    </tr>
+                    <tr>
+                        <td>ingrese cuantos alumnas mujeres hay:</td>
+                        <td><input type="text" id="mujeres" oninput="validarNumeroEntero(this)"></td>
+                    </tr>
+                    <tr>
+                        <td> <!-- esapcio --> </td>
+                        <td><br>
+                            <input type="button" value="Calcular porcentajes" onclick="calcularPorcentaje()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            El porcentaje de hombres son: </td>
+                        <td><br><input type="text" id="resultH" readonly=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            El porcentaje de mujeres son: </td>
+                        <td><br><input type="text" id="resultM" readonly=""><br></td>                        
+                    </tr>                    
+                </table>
+            </div>
+        </form>
+    </div>
+
+    <br><!-- ================= Ejercicio #6 ================= -->
+    <p>-----------------------------------------------------------------------------------------------------------------</p>
+    <div>
+        <h3>Ejercicio 6</h3>
+        <form action="" name="hombresymujeres" action="">
+            <label for="">Algoritmo para calcular la edad de una persona.</label>
+            <div class="table-content6">
+                <table class="table-content6">
+                    <tr>
+                        <td><br>
+                            Ingrese su fecha de nacimiento: 
+                        </td>
+                        <td><br>
+                            <input type="date" id="FechaNacimiento" min="1930" max="2020">
+                        </td>                
+                    </tr>
+                    <tr>
+                        <td>
+                            Su edad actual es: 
+                        </td>
+                        <td>
+                            <p id="edad"></p>
+                        </td>
+                    </tr>
+                </table>                            
+            </div>
+        </form>
+    </div>
+
+    <!-- ================= Scripts ================= -->
+    <script src="./js/interes.js"></script>
+    <script src="./js/ejer2.js"></script>
+    <script src="./js/ejer3.js"></script>
+    <script src="./js/ejer4.js"></script>
+    <script src="./js/ejer5.js"></script>
+    <script src="./js/ejer6.js"></script>
+    <!-- ================= Fin Scripts ================= -->
+
+</body>
+</html>

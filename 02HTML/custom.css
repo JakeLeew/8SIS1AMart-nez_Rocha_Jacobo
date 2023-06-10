@@ -12,6 +12,7 @@ body {
 }
 
 .head {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -168,7 +169,6 @@ p {
     background-size: cover;
     text-align: center;
 }
-
 
 .contact {
     padding-top: 20px;
