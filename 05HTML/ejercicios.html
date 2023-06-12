@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejercicios</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./estiloEjer.css">
 </head>
 <body>
-    
     <!-- ================= Ejercicio #1 ================= -->
     <div class="container">
         <h3>Ejercicio 1</h3>
@@ -48,9 +47,8 @@
         </form>
     </div>
 
-    <br><!-- ================= Ejercicio #2 ================= -->
-    <p>-----------------------------------------------------------------------------------------------------------------</p>
-    <div>
+    <!-- ================= Ejercicio #2 ================= -->
+    <div class="container">
         <h3>Ejercicio 2</h3>
         <form action="" name="Comisiones" action="">
           <label for="">Obtención del sueldo base más el 10% extra por comisión de sus ventas</label>
@@ -101,9 +99,8 @@
         </form>
       </div>
 
-    <br><!-- ================= Ejercicio #3 ================= -->
-    <p>-----------------------------------------------------------------------------------------------------------------</p>
-    <div>
+    <!-- ================= Ejercicio #3 ================= -->
+    <div class="container">
         <h3>Ejercicio 3</h3>
         <form action="" name="descuento" action="">
           <label for="">Calcular el precio de un articulo con un 15% descuento.</label>
@@ -112,7 +109,7 @@
               <br>
               <tr>
                 <td>Ingrese el precio original: </td>
-                <td><input type="text" id="precioOriginal" oninput="validarNumeroEntero()"></td>
+                <td><input type="text" id="precioOriginal" ></td>
               </tr>
               <tr>
                 <td>
@@ -127,9 +124,8 @@
         </form>
       </div>
 
-    <br><!-- ================= Ejercicio #4 ================= -->
-    <p>-----------------------------------------------------------------------------------------------------------------</p>
-    <div>
+    <!-- ================= Ejercicio #4 ================= -->
+    <div class="container">
         <h3>Ejercicio 4</h3>
         <form action="" name="calificaciones" action="">
             <label for="">Calificación final en la materia de algoritmos.</label>
@@ -137,23 +133,23 @@
                 <table class="table-content1"><br>
                     <tr>
                         <td>ingrese la calificación del primer parcial: </td>
-                        <td><input type="text" id="calificacion1" oninput="validarNumeroEntero(this)"></td>
+                        <td><input type="text" id="calificacion1"></td>
                     </tr>
                     <tr>
                         <td>ingrese la calificación del segundo parcial: </td>
-                        <td><input type="text" id="calificacion2" oninput="validarNumeroEntero(this)"></td>
+                        <td><input type="text" id="calificacion2"></td>
                     </tr>
                     <tr>
                         <td>ingrese la calificación del tercer parcial: </td>
-                        <td><input type="text" id="calificacion3" oninput="validarNumeroEntero(this)"></td>
+                        <td><input type="text" id="calificacion3"></td>
                     </tr>
                     <tr>
                         <td>ingrese la calificación del examen final: </td>
-                        <td><input type="text" id="examenFinal" oninput="validarNumeroEntero(this)"></td>
+                        <td><input type="text" id="examenFinal"></td>
                     </tr>
                     <tr>
                         <td>ingrese la calificación del trabajo final: </td>
-                        <td><input type="text" id="trabajoFinal" oninput="validarNumeroEntero(this)"></td>
+                        <td><input type="text" id="trabajoFinal"></td>
                     </tr>                    
                     <tr>                        
                         <td>                        
@@ -168,9 +164,8 @@
         </form>
     </div>
 
-    <br><!-- ================= Ejercicio #5 ================= -->
-    <p>-----------------------------------------------------------------------------------------------------------------</p>
-    <div>
+    <!-- ================= Ejercicio #5 ================= -->
+    <div class="container">
         <h3>Ejercicio 5</h3>
         <form action="" name="hombresymujeres" action="">
             <label for="">Calcular el porcetaje de mujeres y hombres en un grupo.</label>
@@ -178,11 +173,11 @@
                 <table class="table-content5"><br>
                     <tr>
                         <td>ingrese cuantos alumnos hombres hay:</td>
-                        <td><input type="text" id="hombres" oninput="validarNumeroEntero(this)"></td>
+                        <td><input type="text" id="hombres" onkeypress="validarEntrada(event)"></td>
                     </tr>
                     <tr>
                         <td>ingrese cuantos alumnas mujeres hay:</td>
-                        <td><input type="text" id="mujeres" oninput="validarNumeroEntero(this)"></td>
+                        <td><input type="text" id="mujeres" onkeypress="validarEntrada(event)"></td>
                     </tr>
                     <tr>
                         <td> <!-- esapcio --> </td>
@@ -194,13 +189,13 @@
                         <td>
                             <br>
                             El porcentaje de hombres son: </td>
-                        <td><br><input type="text" id="resultH" readonly=""></td>
+                        <td><br><input type="text" id="resultHombres" readonly=""></td>
                     </tr>
                     <tr>
                         <td>
                             <br>
                             El porcentaje de mujeres son: </td>
-                        <td><br><input type="text" id="resultM" readonly=""><br></td>                        
+                        <td><br><input type="text" id="resultMujeres" readonly=""><br></td>                        
                     </tr>                    
                 </table>
             </div>
@@ -208,8 +203,7 @@
     </div>
 
     <br><!-- ================= Ejercicio #6 ================= -->
-    <p>-----------------------------------------------------------------------------------------------------------------</p>
-    <div>
+    <div class="container">
         <h3>Ejercicio 6</h3>
         <form action="" name="hombresymujeres" action="">
             <label for="">Algoritmo para calcular la edad de una persona.</label>
@@ -236,7 +230,7 @@
         </form>
     </div>
 
-    <!-- ================= Scripts ================= -->
+    <!-- ================= Inicio Scripts ================= -->
     <script src="./js/interes.js"></script>
     <script src="./js/ejer2.js"></script>
     <script src="./js/ejer3.js"></script>

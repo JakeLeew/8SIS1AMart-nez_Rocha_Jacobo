@@ -149,28 +149,31 @@ function getUniqueChars(word) {
 */
 
 function problema3() {
-  const input = document.getElementById('p3-input').value;
-  const palabras = input.split(',');
-  let palabraMasLarga = '';
-  let maxCaracteresUnicos = 0;
+  var input = document.getElementById("p3-input").value;
+  
+  // Verificar si se ingresaron espacios en lugar de comas
+  if (input.includes(" ")) {
+    alert("Por favor, ingresa las palabras juntas y separadas por comas.");
+    return;
+  }
+  
+  var palabras = input.split(",");
+  var resultado = "";
 
-  palabras.forEach((palabra) => {
-    const caracteresPermitidos = /^[A-Z]+$/;
-    if (!caracteresPermitidos.test(palabra.trim())) {
-      alert('Ingresa solo letras mayúsculas separadas por comas');
-      return;
-    }
-
-    const caracteresUnicos = new Set(palabra.toUpperCase().split('')).size;
-    if (caracteresUnicos > maxCaracteresUnicos) {
-      maxCaracteresUnicos = caracteresUnicos;
-      palabraMasLarga = palabra.trim();
-    }
+  palabras.forEach(function (palabra) {
+    var caracteresUnicos = contarCaracteresUnicosEnPalabra(palabra);
+    resultado += palabra + " = " + caracteresUnicos.length + " (" + caracteresUnicos.join(", ") + ")\n";
   });
 
-  document.getElementById('p3-output').textContent =
-    `La palabra con más caracteres únicos es: ${palabraMasLarga}`;
+  document.getElementById("p3-output").innerText = resultado.trim();
 }
+
+function contarCaracteresUnicosEnPalabra(palabra) {
+  var caracteres = palabra.toUpperCase().split("");
+  var caracteresUnicos = [...new Set(caracteres)];
+  return caracteresUnicos;
+}
+
 
 
 

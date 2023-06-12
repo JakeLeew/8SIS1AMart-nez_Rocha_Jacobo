@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;600&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-image: url(../IMG/Gift-hallow-terraria.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Aquí puedes ajustar el nivel de transparencia cambiando el último valor (0.5) */
+    /* Otros estilos para el contenedor */
+
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto; 
+    padding: 20px;
+  }
+  
+  .problema-containerejer1 {
+    margin-bottom: 30px;
+    background-color: #318534;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+  }
+
+  .problema-containerejer2 {
+    margin-bottom: 30px;
+    background-color: #318534;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+
+  .problema-containerejer3 {
+    margin-bottom: 30px;
+    background-color: #318534;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  
+  .problema-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .problema-content {
+    margin-top: 20px;
+  }
+  
+  .problema-input {
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .problema-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .problema-output {
+    
+    padding: 10px;
+    margin-top: 10px;
+    white-space: pre-wrap;
+  }
+  
+  .tablas {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .problema-table {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .problema-table th {
+    text-align: left;
+  }
+  
+  .problema-table td {
+    padding: 5px;
+  }
+  
+  .p3-output {
+    margin-top: 10px;
+  }
+  
+  /* Estilos específicos para los ejercicios */
+  
+  #p1-button,
+  #p2-button,
+  #p3-button {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #p2-button {
+    margin-top: 20px;
+  }
+  
+  #p1-output,
+  #p2-output,
+  #p3-output {
+    font-size: 14px;
+  }
