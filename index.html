@@ -5,23 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina web</title>
-    <link rel="stylesheet" href="./css/style.css"> //referencia relativa donde hace una busqueda dentro del proyecto con ./
+    <link rel="stylesheet" href="./css/style.css"> <!-- referencia relativa donde hace una busqueda dentro del proyecto con punto y diagonal ./ -->
 </head>
 <body>
-    <h1>Esta es mi pagina de ejemplo</h1>
+    
     <br>
-    <div>
+    <div class="container">
+        <h1>Mi pagina de ejemplo</h1>
         <p>esto es un ejemplo y aqui haremos un indice de las practicas</p>
         <br>
         <p>Deberan colocar listas y enlaces de las practicas, por que somos patitos</p>
         <br>
-        <li>
-            <ol>
-                <a href="./01HTML/main.html">Practica 1 de HTML</a>
-                <a href="./02HTML/CV.html">Tarea 1 en Html, curriculum vitae</a>
-                <a href="./02HTML/02loggin.html">Practica 2 en Html, curriculum vitae</a>
-            </ol>
-        </li>
+        <div class="card">
+            <div class="card-body">
+                <li>
+                    <ul>
+                        <li><a href="./01HTML/main.html">Practica 1 de HTML</a></li>
+                        <li><a href="./02HTML/CV.html">Tarea 1 en Html, curriculum vitae</a></li>
+                        <li><a href="./02HTML/02loggin.html">Practica 2 en Html, curriculum vitae</a></li>
+                        <li><a href="./03Animado/animada.html">Clase animaciones en css</a></li>
+                        <li><a href="./04HTML/formulario.html">formulario</a></li>
+                        <li><a href="./05HTML/ejercicios.html">Ejercicios de algoritmia</a></li>
+                        <li><a href="./05HTML/landingPage/landing.html">Tarea de landing Page</a></li>
+                        <li><a href="./06Algoritmia/algoritmia.html">Problemas de algoritmia</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
