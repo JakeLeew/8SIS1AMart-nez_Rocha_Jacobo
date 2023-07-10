@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    width: 100vw;
+    height: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(42, 169, 10) 6%, rgb(77, 8, 134) 35%, rgb(0, 34, 255) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    background-image: url(../IMG/portada.jpg);
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+  }
+  
+.glasscontainer{
+
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+}
+
+  h1 {
+    size: 5rem;
+    text-shadow: 0 0 15px #ffff00;
+    color: rgb(24, 229, 233);
+    margin-top: 20px;
+    animation: tittle 1s infinite;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  @keyframes title {
+    
+    50%{
+        text-shadow: 0 0 15px rgb(24, 229, 233);
+        color: #ffff00;
+    }
+
+  }
+  
+  hr {
+    width: 80%;
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid white;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .container-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+  .card-character {
+    background-color: rgb(120, 93, 200);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    height: 10rem;
+  }
+
+  .card-character > img-card {
+    width: 50%;
+    height: 100%;
+    
+  }
+
+  .card-character > .description-card {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description-card > h2 {
+
+    text-align: center;
+    color: #ffff00;
+    text-shadow: 0 0 15px #fff;
+
+  }
+
+  .description-card > p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(87, 197, 197);
+    margin-top: 2rem;
+
+  }
+
+  .finder-character{
+
+    width: 30rem;
+    height: 1rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border-color: rgb(151, 151, 151);
+    padding: 1rem;
+    color: #4f4f4f;
+    font-family: 'Roboto Mono', monospace;
+
+  }
+  
+  .description-card {
+    margin-top: 10px;
+  }
+  
+  .footer {
+    background-color: #2e3a42;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
